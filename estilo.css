@@ -1,0 +1,145 @@
+section{
+    column-count: 3;
+    column-gap: 2em;
+    column-width: 140;
+    
+}
+article{
+    height: 270px;
+}
+#contenedor{
+    display: grid;
+    grid-template-areas: "supi supi supi"
+                         "cent1 cent1 cent1"
+                         "cent2 cent3 cent4"
+                         "img1  img2  img3"
+                         "down1 down1 down1";
+                                 
+                         position: absolute;
+    gap: 3px;
+    grid-template-columns: 40fr 0fr 0fr ; 
+    grid-template-rows: 1fr 0.4fr 1fr;   
+    background: linear-gradient(to right, red 3%, skyblue 45%, green );   
+    border: 4px solid yellow;
+}
+.uno{
+    grid-area: supi;
+    margin-left: 11px;
+   
+    
+}
+.dos{
+    grid-area: cent1;
+    
+    
+}
+.tres{
+    grid-area: cent2;
+    
+}
+.cuatro{
+    grid-area: cent3;
+}
+.cinco{
+    grid-area: cent4;
+}
+.seis{
+    grid-area: down1;
+    text-align: center;
+    background-color: aquamarine;
+}
+h2{
+    animation-name: desplazamiento;
+    animation-duration: 4s;
+    text-align: center;
+   font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+    color: #334960;
+}
+h3{
+   font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0; 
+    color:rgb(57, 80, 143)
+}
+@keyframes desplazamiento{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    25%{
+        margin-left: -65%;
+        width: 100%;
+    } 
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+}
+.información{
+   /*transform: translate(-50%,140%);*/
+   grid-area: cent2;
+   margin-left: 15%;
+   
+   
+}
+
+.i1{
+  grid-area: img1;
+  height: 80%;
+  width: 30%;
+  border-radius: 20px;
+}
+.i2{
+  grid-area: img2;
+  height: 80%;
+  width: 30%;
+  border-radius: 20px;
+}
+.i3{
+  grid-area: img3;
+  height: 80%;
+  width: 30%;
+  border-radius: 20px;
+}
+.imagenes{
+    grid-area: img1;
+    transform: translate(8%,-90%);
+    
+}
+
+body{
+   background-color: rgb(162, 31, 250);
+}
+a:hover{
+    opacity: 50%;
+    color: red;
+}
+
+
+p{
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.botoness{
+  
+  background-color: #334960;
+  color: rgb(226, 130, 19);
+  width: 120px;
+  
+}
